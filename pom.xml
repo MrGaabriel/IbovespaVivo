@@ -4,11 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.mrgaabriel</groupId>
-    <artifactId>AoVivoBot</artifactId>
+    <artifactId>ibovespavivo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-
-    <name>net.mrgaabriel IbovespaVivo</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -110,7 +108,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>net.mrgaabriel.aovivobot.AoVivoBot</mainClass>
+                            <mainClass>net.mrgaabriel.ibovespavivo.AoVivoBot</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

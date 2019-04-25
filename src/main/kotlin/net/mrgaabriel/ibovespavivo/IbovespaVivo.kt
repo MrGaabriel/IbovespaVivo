@@ -1,4 +1,4 @@
-package net.mrgaabriel.aovivobot
+package net.mrgaabriel.ibovespavivo
 
 import com.github.kevinsawicki.http.HttpRequest
 import com.github.salomonbrys.kotson.obj
@@ -6,19 +6,11 @@ import com.github.salomonbrys.kotson.string
 import com.google.gson.Gson
 import com.google.gson.JsonObject
 import com.google.gson.JsonParser
-import com.google.gson.annotations.SerializedName
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 import mu.KotlinLogging
-import twitter4j.Status
-import twitter4j.StatusUpdate
 import twitter4j.Twitter
 import twitter4j.TwitterFactory
 import twitter4j.conf.ConfigurationBuilder
 import java.io.File
-import java.text.DateFormat
-import java.text.SimpleDateFormat
 import java.time.OffsetDateTime
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
@@ -67,7 +59,6 @@ object AoVivoBot {
                 .setOAuthConsumerSecret(config.consumerSecret)
                 .setOAuthAccessToken(config.accessToken)
                 .setOAuthAccessTokenSecret(config.accessSecret)
-                .setUser("AoVivoBot")
 
             val factory = TwitterFactory(twitterConfig.build())
             twitter = factory.instance

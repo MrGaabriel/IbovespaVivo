@@ -21,6 +21,10 @@ object IbovespaVivo {
 
     lateinit var config: Config
 
+    var lastRate: Double
+        get() = File("last_rate.txt").readText().toDouble()
+        set(value) = File("last_rate.txt").writeText(value.toString())
+
     @JvmStatic
     fun main(args: Array<String>) {
         val file = File("config.json")
@@ -34,9 +38,14 @@ object IbovespaVivo {
             return
         }
 
-        config = Gson().fromJson(file.readText(), Config::class.java)
+        // MOMENTO GAMBIARRA
+        val lastRateFile = File("last_rate.txt")
+        if (!lastRateFile.exists()) {
+            lastRateFile.createNewFile()
+            lastRateFile.writeText("0")
+        }
 
-        var lastRate = 0.toDouble()
+        config = Gson().fromJson(file.readText(), Config::class.java)
 
         val twitter = if (config.twitter.enabled)
             setupTwitter()

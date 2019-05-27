@@ -64,7 +64,7 @@ object IbovespaVivo {
             logger.info { "É diferente de $lastRate? ${lastRate != rate}" }
 
             if (lastRate == rate)
-                return
+                continue
 
             logger.info { "Atualizando status!" }
 

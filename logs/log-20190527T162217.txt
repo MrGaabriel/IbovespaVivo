@@ -1,0 +1,1 @@
+[16:22:17.936] [main/WARN]: Parece que é a primeira vez que você iniciou o bot! Configure-o no arquivo "config.json"

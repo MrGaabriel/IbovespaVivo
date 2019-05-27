@@ -63,8 +63,10 @@ object IbovespaVivo {
             logger.info { "Rate: $rate" }
             logger.info { "É diferente de $lastRate? ${lastRate != rate}" }
 
-            if (lastRate == rate)
+            if (lastRate == rate) {
+                Thread.sleep(3 * 60 * 1000)
                 continue
+            }
 
             logger.info { "Atualizando status!" }
 

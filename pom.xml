@@ -120,7 +120,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>net.mrgaabriel.ibovespavivo.AoVivoBot</mainClass>
+                            <mainClass>net.mrgaabriel.ibovespavivo.IbovespaVivo</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

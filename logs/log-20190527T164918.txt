@@ -13,3 +13,8 @@
 [16:55:33.037] [main/INFO]: Atualizando status!
 [16:55:33.404] [main/INFO]: Enviado no Telegram!
 [16:55:33.405] [main/INFO]: lastRate = 94752.82
+[16:58:35.829] [main/INFO]: Rate: 94721.64
+[16:58:35.830] [main/INFO]: É diferente de 94752.82? true
+[16:58:35.830] [main/INFO]: Atualizando status!
+[16:58:36.251] [main/INFO]: Enviado no Telegram!
+[16:58:36.251] [main/INFO]: lastRate = 94721.64
